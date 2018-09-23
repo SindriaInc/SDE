@@ -6,4 +6,4 @@ vm_memory: 2048
 ip_address: 10.249.197.5
 app_name: sde
 proxy: false
-wsl: false
+wsl: true

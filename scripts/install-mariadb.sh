@@ -28,10 +28,10 @@ mysql -e "FLUSH PRIVILEGES"
 # Any subsequent tries to run queries this way will get access denied because lack of usr/pwd param
 
 # Create sindria schema
-mysql --user="root" --password="secret" -e "CREATE database sindria;"
+mysql --user="root" --password="secret" -e "CREATE database sde;"
 
 # Create sindria user on DB
-mysql --user="root" --password="secret" -e "CREATE USER 'sindria'@'0.0.0.0' IDENTIFIED BY 'secret';"
-mysql --user="root" --password="secret" -e "GRANT ALL ON *.* TO 'sindria'@'0.0.0.0' IDENTIFIED BY 'secret' WITH GRANT OPTION;"
-mysql --user="root" --password="secret" -e "GRANT ALL ON *.* TO 'sindria'@'%' IDENTIFIED BY 'secret' WITH GRANT OPTION;"
+mysql --user="root" --password="secret" -e "CREATE USER 'sde'@'0.0.0.0' IDENTIFIED BY 'secret';"
+mysql --user="root" --password="secret" -e "GRANT ALL ON *.* TO 'sde'@'0.0.0.0' IDENTIFIED BY 'secret' WITH GRANT OPTION;"
+mysql --user="root" --password="secret" -e "GRANT ALL ON *.* TO 'sde'@'%' IDENTIFIED BY 'secret' WITH GRANT OPTION;"
 mysql --user="root" --password="secret" -e "FLUSH PRIVILEGES;"
