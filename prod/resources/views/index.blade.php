@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>CloudSindria</title>
+        <title>SDE</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Cloud Sindria
+                    Sindria Development Environment
                 </div>
 
                 <div class="links">

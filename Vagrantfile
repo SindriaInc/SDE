@@ -122,7 +122,7 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", inline: <<-SHELL
       yum update -y
       yum install epel-release -y
-      yum install git vim wget curl nano htop nmap telnet -y
+      yum install git vim wget curl nano htop nmap telnet unzip -y
   SHELL
 
   
@@ -159,6 +159,13 @@ Vagrant.configure("2") do |config|
       s.path = "scripts/enable-services.sh"
       s.args = settings['app_name']                              
   end 
+
+
+ config.vm.provision "shell" do |s|
+      s.name = "Installing app..."
+      s.path = "scripts/install-app.sh"
+      s.args = settings['app_name']                              
+  end   
 
 
   config.vm.provision "shell" do |s|

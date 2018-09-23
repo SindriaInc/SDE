@@ -47,6 +47,8 @@ if [ ! -h "$CONF" ] && [ ! -d "$CONF" ]; then
 	sudo ln -s /etc/opt/remi/php72 /etc/php/php72
 fi
 
+# Install composer
+sudo yum install composer -y
 
 #mv /etc/php.ini /etc/php.ini.old
 #mv /etc/php.d /etc/php.d.old
