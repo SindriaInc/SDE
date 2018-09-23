@@ -1,0 +1,5 @@
+/.vagrant
+ansible.cfg
+/ansible
+/src
+/apps

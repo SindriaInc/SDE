@@ -1,0 +1,9 @@
+---
+vm_box: geerlingguy/centos7
+vm_name: develop.cloud.sindria.org
+vm_hostname: develop-cloud-sindria-org
+vm_memory: 2048
+ip_address: 10.249.197.5
+app_name: develop.cloud.sindria.org
+proxy: false
+wsl: false
