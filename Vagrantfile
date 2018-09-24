@@ -122,7 +122,7 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", inline: <<-SHELL
       yum update -y
       yum install epel-release -y
-      yum install git vim wget curl nano htop nmap telnet unzip -y
+      yum install git vim wget curl nano htop nmap telnet unzip bash-completion -y
   SHELL
 
   
