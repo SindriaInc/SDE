@@ -1,4 +1,5 @@
 /.vagrant
+/.idea
 ansible.cfg
 /ansible
 /src
