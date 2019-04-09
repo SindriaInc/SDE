@@ -161,7 +161,7 @@ Vagrant.configure("2") do |config|
   end 
 
 
- config.vm.provision "shell" do |s|
+  config.vm.provision "shell" do |s|
       s.name = "Installing app..."
       s.path = "scripts/install-app.sh"
       s.args = settings['app_name']                              
