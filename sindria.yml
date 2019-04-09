@@ -1,5 +1,6 @@
 ---
-vm_box: geerlingguy/centos7
+#vm_box: geerlingguy/centos7
+vm_box: offensive-security/kali-linux
 vm_name: sde
 vm_hostname: sde
 vm_memory: 2048

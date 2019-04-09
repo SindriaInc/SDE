@@ -53,9 +53,9 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell" do |s|
     ssh_prv_key = ""
     ssh_pub_key = ""
-    if File.file?("#{Dir.home}/.sindria/vagrant@dev")
-      ssh_prv_key = File.read("#{Dir.home}/.sindria/vagrant@dev")
-      ssh_pub_key = File.readlines("#{Dir.home}/.sindria/vagrant@dev.pub").first.strip
+    if File.file?("#{Dir.home}/.ssh/vagrant@dev")
+      ssh_prv_key = File.read("#{Dir.home}/.ssh/vagrant@dev")
+      ssh_pub_key = File.readlines("#{Dir.home}/.ssh/vagrant@dev.pub").first.strip
     else
       puts "No SSH key found. You will need to remedy this before continue."
       exit(1)
@@ -81,7 +81,7 @@ Vagrant.configure("2") do |config|
 
    # Configure path of private key for WSL (fix vagrant ssh)
    if settings.has_key?('wsl') && settings['wsl']
-     config.ssh.private_key_path = ["~/.sindria/vagrant@dev"]
+     config.ssh.private_key_path = ["~/.ssh/vagrant@dev"]
    end
 
 
